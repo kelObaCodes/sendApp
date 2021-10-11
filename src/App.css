@@ -1,7 +1,26 @@
-.App {
-  text-align: center;
-}
 
+
+:root{
+  --text-color:#A7A8AC;
+  --text-color2:#D4D4D4;
+  --color-white:#fff;
+  --bg-color:#F1F2F6;
+  --color-blue:#0846A7;
+  --color-light-blue:#3A6CB7;
+  --font-aw-color:#83868F;
+  --input-field-color:#F3F3F3;
+  --color-black:#000;
+  --floating-color:#E9E9E9;
+  --switch-inactive-color:#EEEFF2;
+  --switch-inactive-color-child:#DBDEE2;
+  --switch-sub-text-color:#B1B2B4;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,16 +32,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +44,409 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+
+.pb-20{
+  padding-bottom: 20px;
+}
+.pd-10{
+  padding: 20px;
+}
+.pr-5{
+  padding-right: 5px;
+}
+.pb-10{
+  padding-bottom: 10px;
+}
+.pb-20{
+  padding-bottom: 20px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+
+.header-cover{
+  background: var(--color-blue);
+ 
+}
+.header{
+  max-width: 1161px;
+  margin: auto;
+  background: var(--color-blue);
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__first_child{
+  display: flex;
+  flex-basis: 70%;
+  align-items: center;
+}
+
+.header__first_child__input{
+  background-color:  var(--color-light-blue);
+  color: var(--color-white);
+  border: 1px solid transparent;
+  min-height: 40px;
+  padding: 5px;
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.header__first_child__input::placeholder{
+  color:var(--color-white);
+}
+.header-input-div{
+  position: relative;
+ width: 50%;
+}
+
+.header-search{
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  color: var(--color-white);
+}
+.header__second_child{
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+}
+.request-quote-btn{
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  min-height:40px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 150px;
+}
+.shipment-btn{
+  background-color: #59CA87;
+  color:var(--color-white);
+  border: 1px solid  var(--color-blue);
+  min-height:40px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  min-width: 150px;
+}
+
+.send-logo{
+  font-size: 22px;
+  color: var(--color-white);
+  padding-right: 4px;
+}
+.freight-logo{
+  color:var(--color-white);
+}
+
+.text-color{
+  color: var(--text-color);;
+}
+.sub-heading{
+  min-height: 80px;
+  border-radius: 4px;
+  max-width: 1162px;
+  margin-bottom: 20px;
+  margin: auto;
+  position: relative;
+}
+.fa-div{
+  position: absolute;
+  left: -50px;
+}
+.block-cover{
+  min-height: 500px;
+  background: var(--bg-color);
+  padding: 2rem 5rem;
+}
+
+.max-width-container {
+  max-width: 1100px;
+  margin: auto;
+
+}
+.card-block {
+  background-color: var(--color-white);
+  min-height: 100px;
+  border-radius: 4px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px 0 rgb(3 49 86/8%)!important;
+}
+
+.service-box-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service-box-container .service-box,.active-service {
+  flex-basis:23%;
+  border-radius: 5px;
+  border: 1px solid var(--text-color2);
+  min-height: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.service-box_child {
+  flex-basis: 30%;
+}
+.service-box_child:first-child {
+  flex-basis: 70%;
+}
+.service-box_child .fa{
+color: var(--font-aw-color);
+font-size: 100px;
+top: -30px;
+position: absolute;
+right: -17px;
+}
+
+.pos-relative{
+  position: relative;
+}
+.active-service{
+  background-color: var(--color-blue);
+  color: var(--color-white) !important;
+  border: 1px solid var(--color-white) !important;
+}
+.active-service .fa{
+  color: var(--color-white) !important;
+}
+
+.import-div{
+  display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.import-div__btn{
+
+  min-height: 50px;
+  padding: 10px;
+  min-width: 100px;
+  color: var(--text-color);
+  border: 0.5px solid var(--text-color);
+  background-color: var(--color-white);
+}
+.import-div__btn-div{
+  flex-basis: 25%;
+}
+.import-div__input, .import-div__input-2{
+display: flex;
+min-height: 30px;
+flex-basis: 32%;
+padding: 10px;
+border-radius: 5px;
+align-items: center;
+background-color: var(--input-field-color);
+}
+.import-div__input_class{
+  border: 1px solid var(--input-field-color);
+background-color: var(--input-field-color);
+    max-width: 100%;
+    box-sizing: border-box;
+width: 100%;
+}
+.min-100{
+  min-width: 100%
+}
+.import-div__input_class:focus,
+.cargo-details_vol_weight_input_class:focus
+{
+  outline: none;
+  margin-left: 4px ;
+}
+.import-div__input-2{
+  flex-basis: 30%;
+  overflow: hidden;
+}
+
+.cargo-details_div{
+  background-color: var(--bg-color);
+  min-height: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  display: flex;
+  padding: 3px;
+}
+
+.cargo-details_div_child, .cargo-details_div_child-active{
+  flex-basis:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--text-color);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.cargo-details_div_child-active{
+  background-color: var(--color-white);
+  min-height: 20px;
+  color:var(--color-blue);
+ 
+}
+.cargo-details_vol_weight{
+  display: flex;
+  max-width: 450px;
+  justify-content: space-between;
+}
+
+.card-block-header{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-block-header_child{
+  flex-basis: 50%;
+}
+
+.cargo-details_vol_weight_input{
+  display: flex;
+  min-height: 30px;
+  flex-basis: 45%;
+  align-items: center;
+  border:1px solid var(--floating-color);
+  border-radius: 5px;
+  padding: 14px;
+  position: relative;
+  margin-right: 20px;
+  color: var(--text-color);
+}
+.cargo-details_vol_weight_input_class{
+  border:1px solid var(--color-white);
+  
+
+}
+.cargo-details_floating_label{
+  position: absolute;
+  top: -15px;
+  padding: 5px;
+  font-weight: 600;
+  background-color:var(--color-white);
+  color: var(--color-black);
+}
+
+.toggle-div, .toggle-div-inactive{
+  background-color: var(--color-blue);
+  height: 20px;
+  border-radius: 20px;
+  max-width: 45px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  border: 1px solid var(--color-blue);
+}
+.toggle-div-state{
+height: 20px;
+width: 20px;
+border-radius: 50%;
+
+border: 1px solid var(--switch-inactive-color-child);
+background-color: var(--color-white);
+}
+.toggle-div-inactive{
+  background-color: var(--switch-inactive-color);
+  justify-content: flex-start;
+  border: 1px solid var(--switch-inactive-color-child);
+
+}
+
+.toggle-parent{
+  display: flex;
+}
+.add-service{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-service_child{
+  flex-basis: 45%;
+  margin-top:30px;
+}
+
+.sub-text-col{
+  color: var(--switch-sub-text-color);
+}
+.header-text{
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 991px) {
+
+  .service-box-container .service-box,.active-service {
+    flex-basis:100%;
+    margin-bottom: 20px;
+ 
+  }
+  .block-cover {
+    
+    padding: 1rem ;
+}
+.import-div__btn-div,.import-div__input-2{
+  flex-basis: 100%;
+}
+.import-div__input, .import-div__input-2{
+flex-wrap: wrap;
+flex-basis: 100%;
+margin-bottom: 20px;
+
+}
+.card-block-header_child{
+  flex-basis: 100%;
+}
+.add-service_child{
+  flex-basis: 100%;
+}
+.header-text{
+  margin-bottom: 30px;
+}
+.header__first_child, .header__second_child, .cargo-details_vol_weight_input{
+  flex-basis: 100%;
+}
+.header__first_child{
+  margin-bottom: 20px;
+}
+.header{
+  padding: 20px;
+}
+.cargo-details_div{
+  margin-top: 20px;
+}
+.cargo-details_vol_weight_input{
+  margin-bottom: 20px;
+}
+.cargo-details_vol_weight{
+  flex-wrap: wrap;
+
+}
+.import-div__btn-div{
+  margin-bottom: 20px;
+}
 }
