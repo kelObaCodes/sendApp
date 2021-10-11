@@ -1,8 +1,6 @@
 import "../App.css";
 
 function Cargo() {
-
-
   return (
     <div>
       <div className="card-block service-div max-width-container ">
@@ -41,9 +39,8 @@ function Cargo() {
 
         <div className="import-div mt-30">
           <div className="import-div__input-2">
-          <span>
-          <i class="fa fa-calendar pr-5"></i>
-          
+            <span>
+              <i class="fa fa-calendar pr-5"></i>
             </span>
             <div>
               <input
@@ -53,17 +50,15 @@ function Cargo() {
             </div>
           </div>
           <div className="import-div__input-2">
-          
             <div className="min-100">
-            <select   className="import-div__input_class ml-5">
+              <select className="import-div__input_class ml-5">
                 <option>IncoTerms</option>
                 <option>IncoTerms</option>
                 <option>IncoTerms</option>
-            </select>
+              </select>
             </div>
           </div>
           <div className="import-div__input-2">
-          
             <div>
               <input
                 className="import-div__input_class ml-5"

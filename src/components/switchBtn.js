@@ -1,7 +1,7 @@
 import "../App.css";
 import { useState } from "react";
 
-function CargoDetails({headText, subText, activeState}) {
+function CargoDetails({ headText, subText, activeState }) {
   const [active, setActive] = useState(activeState);
 
   const setActiveDiv = (text) => {
@@ -17,9 +17,8 @@ function CargoDetails({headText, subText, activeState}) {
         <div className="toggle-div-state"></div>
       </div>
       <div className="ml-20">
-{headText}
-{subText}
-
+        {headText}
+        {subText}
       </div>
     </div>
   );
